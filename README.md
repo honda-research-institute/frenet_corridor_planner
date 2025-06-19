@@ -8,9 +8,10 @@
 
 The **Frenet Corridor Planner (FCP)** is an optimization-based local path planner designed for real-time trajectory generation in autonomous vehicles. Leveraging the Frenet reference frame and a space-domain bicycle model, FCP defines safe, smooth, drivable corridors around static and dynamic obstacles—then optimizes paths for smoothness, clearance, and risk reduction, before integrating with a speed planner.
 
-![Demo](01-dyn-obs.gif)
-![Demo](03-crowd-nav.gif)
-![Demo](04-occlusion.gif)
+![Dynamic obstacles with perception noises](01-dyn-obs.gif)
+![Planning with occlusions](04-occlusion.gif)
+![Crowd navgiation](03-crowd-nav.gif)
+
 ---
 
 ## 🧩 Key Features
