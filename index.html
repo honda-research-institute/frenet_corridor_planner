@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="An Optimization Based Local Path Planner That Operates in Frenet Space.">
+  <meta property="og:title"
+    content="Frenet Corridor Planner: An Optimization Based Local Path Planner That Operates in Frenet Space" />
+  <meta property="og:description" content="An Optimization Based Local Path Planner That Operates in Frenet Space" />
+  <meta property="og:url" content="https://github.com/honda-research-institute/frenet_corridor_planner" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords"
+    content="
+dynamic path planner, local path planning, noise resilient, robust planner, perception uncertainty aware planner, optimization based planner, local path planning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Frenet Corridor Planner</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Frenet Corridor Planner</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=YmCC4XEAAAAJ&hl=en"
+                  target="https://scholar.google.com/citations?user=YmCC4XEAAAAJ&hl=en">Faizan
+                  Tariq</a>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/goroyeh56" target="https://www.linkedin.com/in/goroyeh56">Goro
+                  Yeh</a>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/avinsh" target="https://www.linkedin.com/in/avinsh">Avinash
+                  Singh</a>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=cnvMxG0AAAAJ&hl=en"
+                  target="https://scholar.google.com/citations?user=cnvMxG0AAAAJ&hl=en">David Isele</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=oITSWvIAAAAJ&hl=en"
+                  target="https://scholar.google.com/citations?user=oITSWvIAAAAJ&hl=en">Sangjae Bae</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Honda Research Institute, USA<br>IEEE Intelligent Vehicles Symposium (IV
+                2025)</span>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2505.03695" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/honda-research-institute/frenet_corridor_planner/blob/code/README.md" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+
+                </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper Overview -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">📘 Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+              The Frenet Corridor Planner (FCP) is an optimization-based local path planner designed for real-time
+              trajectory generation in autonomous vehicles. Leveraging the Frenet reference frame and a space-domain
+              bicycle model, FCP defines safe, smooth, drivable corridors around static and dynamic obstacles—then
+              optimizes paths for smoothness, clearance, and risk reduction, before integrating with a speed planner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper Overview -->
+
+  <!-- Teaser Gif 1-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="title is-3"> </h2>
+        <!-- Your image here -->
+        <img src="static/gifs/01-dyn-obs.gif" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-centered">
+          Noise-resilient planning
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End Gif 1 -->
+
+  <!-- Teaser Gif 2-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- Your image here -->
+        <img src="static/gifs/03-crowd-nav.gif" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-centered">
+          Dynamic and efficient updates
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End Gif 2 -->
+
+  <!-- Teaser Gif 3-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- Your image here -->
+        <img src="static/gifs/04-occlusion.gif" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-centered">
+          Smooth update with occlusions
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End Gif 3 -->
+
+  <!-- Key Features -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">🧩 Key Features</h2>
+          <div class="content has-text-justified">
+            <p>
+            <ul>
+              <li>
+                <strong>Frenet-based obstacle modeling</strong><br>
+                Vehicles are represented as safety-augmented bounding boxes and pedestrians as convex hulls in Frenet
+                space.
+              </li>
+              <li>
+                <strong>Adaptive drivable corridors</strong><br>
+                Dynamically selects lateral deviations to create safe passage zones around detected obstacles.
+              </li>
+              <li>
+                <strong>Optimization with bicycle kinematics</strong><br>
+                A modified space-domain bicycle model ensures kinematic feasibility, smoothness, and safety during
+                optimization.
+              </li>
+              <li>
+                <strong>Decoupled path-speed planning</strong><br>
+                Separates path and speed stages for efficient computation: FCP handles geometry, while an existing speed
+                planner completes trajectory generation.
+              </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End of Key Features -->
+
+
+
+  <!-- Evaluation -->
+  <section class="section Evaluation">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">📊 Evaluation</h2>
+
+          <p>Tested in simulation and on physical hardware with realistic sensor noise and dynamic obstacle scenarios.
+            Demonstrated smooth, safe maneuvers around static and moving objects with kinematic consistency, even in
+            tight
+            spaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BibTex citation -->
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">📚 Citation</h2>
+            <p>If you find this work useful, please cite:</p>
+            <pre><code>
+@article{tariq2025frenet,
+  title   = {Frenet Corridor Planner: An Optimal Local Path Planning Framework for Autonomous Driving},
+  author  = {Tariq, Faizan M. and Yeh, Zheng-Hang and Singh, Avinash and Isele, David and Bae, Sangjae},
+  journal = {arXiv preprint arXiv:2505.03695},
+  year    = {2025}
+}
+          </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--End BibTex citation -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
