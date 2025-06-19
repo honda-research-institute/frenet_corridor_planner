@@ -1,7 +1,8 @@
 # 🛣️ Frenet Corridor Planner (FCP)
 
 **An Optimal Local Path Planning Framework for Autonomous Driving**
-
+> 📌 **Code coming soon!**  
+> ⭐ Star this repo to get notified as soon as it's released.
 ---
 
 ## 📘 Overview
@@ -49,6 +50,5 @@ If you find this work useful, please cite:
 }
 ```
 
-> 📌 **Code coming soon!**  
-> ⭐ Star this repo to get notified as soon as it's released.
+
 
