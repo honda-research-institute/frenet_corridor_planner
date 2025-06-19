@@ -8,5 +8,6 @@ Frenet Corridor Planner: high-efficient and noise-resilient optimal path planner
   journal={arXiv preprint arXiv:2505.03695},
   year={2025}
 }
+```
 
 [2025-06-18] Code to be released.
