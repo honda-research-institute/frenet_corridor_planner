@@ -33,7 +33,8 @@ The **Frenet Corridor Planner (FCP)** is an optimization-based local path planne
 
 ---
 
-📚 Citation
+## 📚 Citation
+
 If you find this work useful, please cite:
 ```
 @article{tariq2025frenet,
