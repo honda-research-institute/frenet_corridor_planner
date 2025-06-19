@@ -1,7 +1,7 @@
 # 🛣️ Frenet Corridor Planner (FCP)
 
 **An Optimal Local Path Planning Framework for Autonomous Driving**
-![Demo](https://drive.google.com/file/d/18olGnH7ddsws4_FweMgaTt54Hj-NKL8e/view?usp=drive_link)
+![Demo](https://drive.google.com/file/d/18olGnH7ddsws4_FweMgaTt54Hj-NKL8e)
 ![Demo](https://drive.google.com/file/d/14SqVO_RLuo_cfVgG-gXFE_InkwMq0GMS/view?usp=drive_link)
 ![Demo](https://drive.google.com/file/d/1qux0HzVTElItubkW-_9tr741NzzuJ11i/view?usp=drive_link)
 ---
