@@ -1,57 +1,31 @@
 # 🛣️ Frenet Corridor Planner (FCP)
 
 **An Optimal Local Path Planning Framework for Autonomous Driving**
-> 📌 **Code coming soon!**  
+> **Code**  
+> Optimized Version Coming Soon!  
 > ⭐ Star this repo to get notified as soon as it's released.
 ---
+ 
+## Getting Started
 
-## 📘 Overview
+This readme is designed to help you get FCP up and running quickly. Follow the steps below to set up your environment and begin exploring the code.
 
-The **Frenet Corridor Planner (FCP)** is an optimization-based local path planner designed for real-time trajectory generation in autonomous vehicles. Leveraging the Frenet reference frame and a space-domain bicycle model, FCP defines safe, smooth, drivable corridors around static and dynamic obstacles—then optimizes paths for smoothness, clearance, and risk reduction, before integrating with a speed planner.
+### 1. Create a Conda Environment
 
-- Noise-resilient planning
-![Dynamic obstacles with perception noises](01-dyn-obs.gif)
-- Smooth update with occlusions
-![Planning with occlusions](04-occlusion.gif)
-- Dynamic and efficient updates
-![Crowd navgiation](03-crowd-nav.gif)
+First, ensure you have [Anaconda](https://www.anaconda.com/products/distribution) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed on your system.
 
----
+Then, create a new conda environment using the provided `fcp.yaml` file:
 
-## 🧩 Key Features
-
-- **Frenet-based obstacle modeling**  
-  Vehicles are represented as safety-augmented bounding boxes and pedestrians as convex hulls in Frenet space.
-
-- **Adaptive drivable corridors**  
-  Dynamically selects lateral deviations to create safe passage zones around detected obstacles.
-
-- **Optimization with bicycle kinematics**  
-  A modified space-domain bicycle model ensures kinematic feasibility, smoothness, and safety during optimization.
-
-- **Decoupled path-speed planning**  
-  Separates path and speed stages for efficient computation: FCP handles geometry, while an existing speed planner completes trajectory generation.
-
----
-
-## 📊 Evaluation
-
-- Tested in **simulation** and on **physical hardware** with realistic sensor noise and dynamic obstacle scenarios.
-- Demonstrated **smooth, safe** maneuvers around static and moving objects with kinematic consistency, even in tight spaces.
-
----
-
-## 📚 Citation
-
-If you find this work useful, please cite:
-```
-@article{tariq2025frenet,
-  title = {Frenet Corridor Planner: An Optimal Local Path Planning Framework for Autonomous Driving},
-  author = {Tariq, Faizan M. and Yeh, Zheng-Hang and Singh, Avinash and Isele, David and Bae, Sangjae},
-  journal = {arXiv preprint arXiv:2505.03695},
-  year = {2025}
-}
+```bash
+conda env create -f fcp.yaml
 ```
 
 
+### 2. Run the Tutorial Notebook
+After creating the environment, launch Jupyter Notebook (or your preferred Jupyter interface) and open the `fcp_tutorial.ipynb` file.
+
+**Note**: Make sure to select the fcp kernel in Jupyter Notebook.
+You can do this by clicking on the Kernel menu → Change kernel → fcp.
+
+This notebook has been arranged in a tutorial format to help you understand and use Frenet Corridor Planner effectively.
 

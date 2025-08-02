@@ -1,0 +1,11 @@
+name: fcp-test
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - ipykernel
+  - numpy==1.23.5
+  - casadi=3.7.0
+  - matplotlib==3.7.2
+  - ffmpeg=7.0.1
